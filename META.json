@@ -1,0 +1,88 @@
+{
+   "abstract" : "create your Moo objects as blessed scalar refs",
+   "author" : [
+      "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+   "keywords" : [],
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Monjon",
+   "no_index" : {
+      "directory" : [
+         "eg",
+         "examples",
+         "inc",
+         "t",
+         "xt"
+      ]
+   },
+   "optional_features" : {},
+   "prereqs" : {
+      "configure" : {
+         "recommends" : {
+            "ExtUtils::CBuilder" : "0"
+         },
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.17",
+            "Text::ParseWords" : "0"
+         }
+      },
+      "develop" : {
+         "recommends" : {
+            "Dist::Inkt" : "0.001"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Import::Into" : "0",
+            "List::Util" : "0",
+            "Moo" : "1.004_003"
+         },
+         "suggests" : {
+            "Hash::FieldHash" : "0",
+            "Hash::Util::FieldHash::Compat" : "0"
+         }
+      },
+      "test" : {
+         "recommends" : {
+            "Types::Standard" : "0.001"
+         },
+         "requires" : {
+            "Test::Modern" : "0.007"
+         }
+      }
+   },
+   "provides" : {
+      "Method::Generate::Accessor::Role::Monjon" : {
+         "file" : "lib/Method/Generate/Accessor/Role/Monjon.pm",
+         "version" : "0.001"
+      },
+      "Method::Generate::Constructor::Role::Monjon" : {
+         "file" : "lib/Method/Generate/Constructor/Role/Monjon.pm",
+         "version" : "0.001"
+      },
+      "Monjon" : {
+         "file" : "lib/Monjon.pm",
+         "version" : "0.001"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "X_identifier" : "http://purl.org/NET/cpan-uri/dist/Monjon/project",
+      "bugtracker" : {
+         "web" : "http://rt.cpan.org/Dist/Display.html?Queue=Monjon"
+      },
+      "homepage" : "https://metacpan.org/release/Monjon",
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.001"
+}

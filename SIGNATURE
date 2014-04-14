@@ -1,0 +1,41 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
+SHA1 a156a74c219a3fd11f2a86e9a4e251d8fc9d6c26 COPYRIGHT
+SHA1 6bd7b17d81be63d08d4efa6cb80106e72887842c CREDITS
+SHA1 6241ebf1d49394fbcb69bba528b396cc0168b56b Changes
+SHA1 13a3f86b3ec254e33058edfe6369b2d2dfaca8d3 INSTALL
+SHA1 47870123f373f5185d6893cb98bf06a8a05510aa LICENSE
+SHA1 1203c8131b76c5f18244830411fc4e2590c592ad MANIFEST
+SHA1 e69eff632af74a56feea958ade288b194347a1f5 META.json
+SHA1 caeb7b608a43236063d7d1b85873fc1d01eee653 META.yml
+SHA1 f95fb2e6fd0bb70be87e1df5a1fdca540900e485 Makefile.PL
+SHA1 6e5c3786e4906888c2365aa9bc62a69be5d83451 README
+SHA1 246ed6ccc405df56aa28d55f88b7517118687111 dist.ini
+SHA1 83734402c72d83c179df8337f4d91436d939101e doap.ttl
+SHA1 31e3ad2c01e29e4c0044d1ea71ea6aace008312e lib/Method/Generate/Accessor/Role/Monjon.pm
+SHA1 9a58c68b2f4a4fb40946544b53ac9b2675dc83d9 lib/Method/Generate/Constructor/Role/Monjon.pm
+SHA1 5f84974c0b4c728ff8128c5c50696a47e65f61ca lib/Monjon.pm
+SHA1 9725583d9c05bc91aa2baab715b7943b63c24801 t/01basic.t
+SHA1 c882059b9fd9b95b0baedefb8e0418f9800db464 t/02inheritance.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.14 (GNU/Linux)
+
+iEYEARECAAYFAlNMVOIACgkQzr+BKGoqfTkJUgCfXg4QzI/AlIf5pcoKTLBlgIvN
+YEwAoKiNbtfFavKE2Uq+ZMqONnVE6oC6
+=668R
+-----END PGP SIGNATURE-----
