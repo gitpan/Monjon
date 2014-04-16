@@ -10,8 +10,11 @@ use Import::Into ();
 package Monjon;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 our @ISA       = qw( Moo );
+
+do { require UNIVERSAL::DOES }
+	if $] < 5.010000;
 
 sub import {
 	my $class = shift;
@@ -86,7 +89,7 @@ technique used by L<BrowserUK|http://www.perlmonks.org/?node_id=171588>
 on PerlMonks at L<http://www.perlmonks.org/?node_id=1040313>.
 
 However, inside-out attributes are also offered for data which cannot
-be reasonably serialized to a string. (However, if you do need to store
+be reasonably serialized to a string. (But if you do need to store
 things like references, perhaps Monjon is not for you.)
 
 =head2 Differences from Moo
