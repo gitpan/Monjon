@@ -10,7 +10,7 @@ use Import::Into ();
 package Monjon;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 our @ISA       = qw( Moo );
 
 do { require UNIVERSAL::DOES }
@@ -137,6 +137,12 @@ L<http://en.wikipedia.org/wiki/Monjon>.
 
 If you like this module and want to help monjons, please see
 L<http://www.australianwildlife.org.au/Artesian-Range.aspx>.
+
+=head1 CAVEATS
+
+Unless you have Moo 1.004_003 exactly (i.e. neither an older nor a
+newer version of Moo), multiple inheritance is unlikely to work for
+Monjon classes.
 
 =head1 BUGS
 

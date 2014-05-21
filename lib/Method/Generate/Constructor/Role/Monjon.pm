@@ -7,7 +7,7 @@ use Sub::Quote ();
 package Method::Generate::Constructor::Role::Monjon;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 use Moo::Role;
 
@@ -49,8 +49,8 @@ around _handle_subconstructor => sub
 	my ($into, $name) = @_;
 	
 	return sprintf(
-		'$Monjon::INSTANCES_EXIST{%s} = 1; %s',
-		Sub::Quote::quotify($into),
+		'$Monjon::INSTANCES_EXIST{"%s"} = 1; %s',
+		quotemeta($into),
 		$self->$next(@_),
 	);
 };

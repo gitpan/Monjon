@@ -23,7 +23,7 @@ my $meta = {
                                      },
                         develop   => { recommends => { "Dist::Inkt" => 0.001 } },
                         runtime   => {
-                                       requires => { "Import::Into" => 0, "List::Util" => 0, "Moo" => "1.004_003" },
+                                       requires => { "Import::Into" => 0, "List::Util" => 0, "Moo" => "1.001000" },
                                        suggests => {
                                                      "Hash::FieldHash" => 0,
                                                      "Hash::Util::FieldHash::Compat" => 0,
@@ -38,13 +38,13 @@ my $meta = {
   "provides"       => {
                         "Method::Generate::Accessor::Role::Monjon" => {
                           file => "lib/Method/Generate/Accessor/Role/Monjon.pm",
-                          version => 0.002,
+                          version => 0.003,
                         },
                         "Method::Generate::Constructor::Role::Monjon" => {
                           file => "lib/Method/Generate/Constructor/Role/Monjon.pm",
-                          version => 0.002,
+                          version => 0.003,
                         },
-                        "Monjon" => { file => "lib/Monjon.pm", version => 0.002 },
+                        "Monjon" => { file => "lib/Monjon.pm", version => 0.003 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -53,7 +53,7 @@ my $meta = {
                         license      => ["http://dev.perl.org/licenses/"],
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Monjon/project",
                       },
-  "version"        => 0.002,
+  "version"        => 0.003,
 };
 
 my %dynamic_config;

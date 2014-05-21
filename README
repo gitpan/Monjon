@@ -60,6 +60,11 @@ DESCRIPTION
     If you like this module and want to help monjons, please see
     <http://www.australianwildlife.org.au/Artesian-Range.aspx>.
 
+CAVEATS
+    Unless you have Moo 1.004_003 exactly (i.e. neither an older nor a newer
+    version of Moo), multiple inheritance is unlikely to work for Monjon
+    classes.
+
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=Monjon>.
