@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "create your Moo objects as blessed scalar refs",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 1,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.021, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -18,42 +18,51 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => {
-                                       recommends => { "ExtUtils::CBuilder" => 0 },
-                                       requires   => { "ExtUtils::MakeMaker" => 6.17, "Text::ParseWords" => 0 },
-                                     },
-                        develop   => { recommends => { "Dist::Inkt" => 0.001 } },
-                        runtime   => {
-                                       requires => { "Import::Into" => 0, "List::Util" => 0, "Moo" => "1.001000" },
-                                       suggests => {
-                                                     "Hash::FieldHash" => 0,
-                                                     "Hash::Util::FieldHash::Compat" => 0,
-                                                     "UNIVERSAL::DOES" => 0,
-                                                   },
-                                     },
-                        test      => {
-                                       recommends => { "Types::Standard" => 0.001 },
-                                       requires   => { "Test::Modern" => 0.007 },
-                                     },
+                          recommends => { "ExtUtils::CBuilder" => 0 },
+                          requires   => { "ExtUtils::MakeMaker" => 6.17, "Text::ParseWords" => 0 },
+                        },
+                        runtime => {
+                          requires => {
+                                        "Import::Into" => 0,
+                                        "List::Util" => 0,
+                                        "Moo" => "1.001000",
+                                        "perl" => "5.006000",
+                                      },
+                          suggests => {
+                                        "Hash::FieldHash" => 0,
+                                        "Hash::Util::FieldHash::Compat" => 0,
+                                        "UNIVERSAL::DOES" => 0,
+                                      },
+                        },
+                        test => {
+                          recommends => { "Types::Standard" => 0.001 },
+                          requires   => { "Test::Modern" => 0.007 },
+                        },
                       },
   "provides"       => {
                         "Method::Generate::Accessor::Role::Monjon" => {
                           file => "lib/Method/Generate/Accessor/Role/Monjon.pm",
-                          version => 0.003,
+                          version => 0.004,
                         },
                         "Method::Generate::Constructor::Role::Monjon" => {
                           file => "lib/Method/Generate/Constructor/Role/Monjon.pm",
-                          version => 0.003,
+                          version => 0.004,
                         },
-                        "Monjon" => { file => "lib/Monjon.pm", version => 0.003 },
+                        "Monjon" => { file => "lib/Monjon.pm", version => 0.004 },
                       },
   "release_status" => "stable",
   "resources"      => {
                         bugtracker   => { web => "http://rt.cpan.org/Dist/Display.html?Queue=Monjon" },
                         homepage     => "https://metacpan.org/release/Monjon",
                         license      => ["http://dev.perl.org/licenses/"],
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Monjon/project",
+                        repository   => {
+                                          type => "git",
+                                          url  => "git://github.com/tobyink/p5-monjon.git",
+                                          web  => "https://github.com/tobyink/p5-monjon",
+                                        },
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/Monjon/project",
                       },
-  "version"        => 0.003,
+  "version"        => 0.004,
 };
 
 my %dynamic_config;
